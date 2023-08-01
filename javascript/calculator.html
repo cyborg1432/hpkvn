@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="num1"/>
+    <br />
+
+    <input id="num2" /><br />
+
+
+    <h1 id="result">Result</h1>
+
+    <button onclick="add();">Add</button>
+
+    <button onclick="sub();">Sub</button>
+    
+    <button onclick="multiply();">Multiply</button>
+    
+    <button onclick="divide();">Divide</button>
+
+
+
+    <script>
+        function add(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+
+            var z = Number(num1) + Number(num2);
+
+
+            //Heading Reference
+
+            var result = document.getElementById("result");
+            result.textContent = z
+
+        }
+
+        function sub(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+
+            var z = Number(num1) - Number(num2);
+
+
+            //Heading Reference
+
+            var result = document.getElementById("result");
+            result.textContent = z
+            
+        }
+
+        function multiply(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+
+            var z = Number(num1) * Number(num2);
+
+
+            //Heading Reference
+
+            var result = document.getElementById("result");
+            result.textContent = z
+            
+        }
+
+        function divide(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+
+            var z = Number(num1) / Number(num2);
+
+
+            //Heading Reference
+
+            var result = document.getElementById("result");
+            result.textContent = z
+            
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <center>
+        <h1 id="heading">None</h1>
+        <br />
+
+        <input id="name" />
+        <br /><br />
+
+        <button onclick="exe();">Print Name Below</button>
+    </center>
+
+
+
+    <script>
+        function exe() {
+            var heading = document.getElementById("heading")
+
+            var x = document.getElementById("name")
+            var inputValue = x.value;
+
+            heading.textContent = inputValue
+        }
+    </script>
+
+
+</body>
+
+</html>

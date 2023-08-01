@@ -1,0 +1,10 @@
+sum of numbers
+square of two numbers
+currency converter
+modulo remainder finder
+if else questions
+if elif else statements
+comparison
+basic calculator
+assignment operators practical
+errors checking
