@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="name" />
+    <input id="number" />
+
+    <button onclick="abc();">Btn</button>
+
+
+    <script>
+
+        function abc() {
+
+            var myName = document.getElementById("name").value;
+            var myNumber = Number(document.getElementById("number").value);
+
+            for(let i = 0; i < myNumber; i++){
+                console.log(myName);
+            }
+
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

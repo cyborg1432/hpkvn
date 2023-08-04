@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <input id="input" />
+
+    <h1 id="result"> Result </h1>
+
+    <button onclick="check()">Check</button>
+
+
+    <script>
+
+        function check() {
+
+
+            var input = Number(document.getElementById("input").value)
+
+            var result = document.getElementById("result");
+
+            // switch(input){
+            //     case 1:
+            //         result.textContent = "user input 1"
+            //         break;
+
+            //     case 2:
+            //         result.textContent = "user input 2";
+            //         break;
+
+            //     default:
+            //         result.textContent = "default";
+            // }
+
+
+
+
+            if(input < 50){
+
+                if(input<20){
+                    result.textContent = "marks is lt 20"
+                }else{
+                    result.textContent = "marks is gt than 20 an lt 50"
+                }
+
+            }else{
+                result.textContent = "marks is gt than 50"
+            }
+
+
+
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

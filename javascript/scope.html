@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Previous</h1>
+
+    <input id="input" />
+
+    <button onclick="scope()">Click</button>
+
+    <script>
+
+
+        //Global
+
+        var x = 10;
+
+        let y = 20;
+
+        var elementH1=document.getElementById("heading")
+
+        var elementInput = document.getElementById("input").value
+        
+
+        function scope(){
+
+            //Local
+
+            console.log(elementInput)
+
+            elementH1.textContent = "new"
+
+            a = 10
+            console.log(y)
+        }
+
+        // console.log(a)
+
+    </script>
+</body>
+</html>
