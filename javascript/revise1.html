@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn1" onclick="btn1();">Btn 1</button>
+
+    <button id="btn2" onclick="btn2();">Btn 2</button>
+
+
+    <button id="btnAdd" onclick="btnAdd()">+</button>
+
+
+    <button id="addition" onclick="addition()">Addition Fxn</button>
+
+    <input id="input1" />
+
+    <script>
+
+        function btn1(){
+            var input1 = document.getElementById("input1");
+
+            input1.value += 1;
+
+
+        }
+
+
+        function btn2(){
+            var input1 = document.getElementById("input1");
+
+            input1.value += 2; 
+
+        }
+
+
+        function btnAdd(){
+            var input1 = document.getElementById("input1");
+
+            input1.value += "+"; 
+
+        }
+
+
+        function addition(){
+            var input1 = document.getElementById("input1");
+
+
+            input1.value = eval(input1.value);
+
+        }
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
